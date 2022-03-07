@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <title>INVOICE</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="css/bootstrap.min.css">
+      <link rel="stylesheet" href="css/styles.css">
+      <link rel="stylesheet" href="css/responsive.css">
+   </head>
+   <body>
+      <section class="invoice_section p-2 pl-md-5 pr-md-5" id="invoice">
+         <div class="row m-0 mt-4">
+            <div class="col-sm-8 m-auto">
+               <div class="fo-14 fw-800">BILL FROM :</div>
+               <div class="fo-13">Bwork Service</div>
+               <div class="fo-13">Baliya, Biroul Darbhanga, Bihar</div>
+            </div>
+            <div class="col-sm-4">
+               <img src="http://bihariwork.com/images/img/logo%20rectangle.png" class="w-70">
+            </div>
+         </div>
+         <div class="row m-0 mt-4">
+            <div class="col-sm-8">
+               <div class="fo-14 fw-800">BILL TO :</div>
+               <div class="fo-13">Pratiti Bera</div>
+               <div class="fo-13">Mirpur, near H.P. Gas Godown, <br>Kharagpur, West Midnapur - 721301</div>
+            </div>
+            <div class="col-sm-4">
+               <br>
+               <div class="fo-14 fw-700">INVOICE ID : <span class="fo-13 fw-600">13579</span></div>
+               <div class="fo-14 fw-700">INVOICE DATE : <span class="fo-13 fw-600">09/03/2022</span></div>
+               <div class="fo-14 fw-700">ORDER ID : <span class="fo-13 fw-600">246801</span></div>
+            </div>
+         </div>
+         <div class="table-responsive mt-4">
+            <table class="table table-bordered">
+               <thead class="thead-light">
+                  <tr>
+                     <th>Sr. No</th>
+                     <th>Service name</th>
+                     <th>Amount</th>
+                  </tr>
+               </thead>
+               <tbody>
+                  <tr>
+                     <td>1</td>
+                     <td>Plumbing</td>
+                     <td>₹240</td>
+                  </tr>
+                  <tr>
+                     <td>2</td>
+                     <td>Electrical fixes</td>
+                     <td>₹530</td>
+                  </tr>
+                  <tr>
+                     <td>3</td>
+                     <td>Furniture repairing</td>
+                     <td>₹160</td>
+                  </tr>
+                  <tr>
+                     <td>4</td>
+                     <td>Fencing</td>
+                     <td>₹750</td>
+                  </tr>
+               </tbody>
+            </table>
+         </div>
+         <div class="row m-0 mt-1">
+            <div class="col-sm-6"></div>
+            <div class="col-sm-6">
+               <table class="table table-borderless subtotal_table">
+                  <tbody>
+                     <tr>
+                        <td style="text-decoration: underline;">SUBTOTAL :</td>
+                        <td>₹1680</td>
+                     </tr>
+                     <tr>
+                        <td style="text-decoration: underline;">TAXES :</td>
+                        <td>30%</td>
+                     </tr>
+                     <tr>
+                        <td>INVOICE TOTAL : </td>
+                        <td style="text-decoration: underline;">₹2182</td>
+                     </tr>
+                  </tbody>
+               </table>
+            </div>
+         </div>
+      </section>
+      <div class="text-center mt-5 mb-5">
+         <button class="btn btn-info fw-700" onclick="pdfDownload();">DOWNLOAD PDF</button>
+      </div>
+   </body>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.8.0/html2pdf.bundle.min.js"></script>
+   <script>
+      function pdfDownload(){
+         var element = document.getElementById('invoice');
+         html2pdf(element);
+      }
+   </script>
+</html>

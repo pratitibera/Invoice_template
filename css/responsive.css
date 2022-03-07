@@ -1,0 +1,77 @@
+@media only screen and (min-width: 577px) {
+	.invoice_section{
+		width: 100%;
+		background-color: #ffffff;
+	}
+}
+
+@media only screen and (min-width: 750px) {
+	.invoice_section{
+		max-width: 750px;
+		background-color: #ffffff;
+		margin: auto;
+	}
+}
+
+@media only screen and (max-width: 576px) {
+	/* Global classes for mobile */
+	.mfo-35 {
+		font-size: 35px!important;
+	}
+	.mfo-32 {
+		font-size: 32px!important;
+	}
+	.mfo-30 {
+		font-size: 30px!important;
+	}
+	.mfo-28 {
+		font-size: 28px!important;
+	}
+	.mfo-25 {
+		font-size: 25px!important;
+	}
+	.mfo-24 {
+		font-size: 24px!important;
+	}
+	.mfo-22 {
+		font-size: 22px!important;
+	}
+	.mfo-20 {
+		font-size: 20px!important;
+	}
+	.mfo-18 {
+		font-size: 18px!important;
+	}
+	.mfo-17 {
+		font-size: 17px!important;
+	}
+	.mfo-16 {
+		font-size: 16px!important;
+	}
+	.mfo-15 {
+		font-size: 15px!important;
+	}
+	.mfo-14 {
+		font-size: 14px!important;
+	}
+	.mfo-13 {
+		font-size: 13px!important;
+	}
+	.mfo-12 {
+		font-size: 12px!important;
+	}
+	.mfo-11 {
+		font-size: 11px!important;
+	}
+	.mfo-10 {
+		font-size: 10px!important;
+	}
+	.mow-100 {
+		width: 100%!important;
+	}
+	/* Custom classes */
+	.invoice_section{
+		width: 100%;
+		background-color: #ffffff;
+	}
+}
